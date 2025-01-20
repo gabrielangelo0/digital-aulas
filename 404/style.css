@@ -38,10 +38,18 @@ a {
 
 .container header .navegacao {
     display: flex;
+    align-items: center;
     gap: 60px;
+    margin-right: 80px;
+    font-weight: bold;
 }
 
 .container header .navegacao nav ul {
     display: flex;
     gap: 20px;
+}
+
+.container header .navegacao button {
+    background-color: transparent;
+    border: none;
 }
