@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p, b, h1 {
+    line-height: 0.7;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.container header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.container header .barra-pesquisa {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+    border-radius: 3px;
+    height: fit-content;
+    border: 1px solid #EFEFF0;
+}
+
+.container header .barra-pesquisa input {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+}
+
+.container header .barra-pesquisa i {
+    font-size: 12px;
+    color: #A272F6;
+}
+
+.container header .atalhos img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.container header .atalhos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #A272F6;
+}
+
+.container header .atalhos i {
+    font-size: 20px;
+}
+
+.container .principal {
+    background-color: #F9FAFB;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.container .principal aside {
+    background-color: white;
+    width: 20%;
+    height: 100%;
+}
+
+.container .principal main {
+    width: 80%;
+    height: 100%;
+    padding: 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container .principal main h1 {
+    font-size: 24px;
+}
+
+.container .principal main .card-info {
+    background-color: #7E3AF2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.container .principal main .card-info a {
+    color: white;
+}
+
+.container .principal main .card-info .esquerda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.container .principal main .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container .principal main .cards .card {
+    background-color: white;
+    border: 1px solid #e3e5e6;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.info b {
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+
+.container .principal main .cards .card .icone {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .principal main .cards .card .icon1 {
+    background-color: #FEECDC;
+    color: #FD652F;
+}
+
+.container .principal main .cards .card .icon2 {
+    background-color: #FEECDC;
+    color: #22956C;
+}
+
+.container .principal main .cards .card .icon3 {
+    background-color: #FEECDC;
+    color: #3C7FE5;
+}
+
+.container .principal main .cards .card .icon4 {
+    background-color: #FEECDC;
+    color: #01979B;
+}
+
+.container .principal aside nav ul {
+    padding: 0;
+}
+
+.container .principal aside nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    color: gray;
+}
+
+.container .principal aside nav ul li a .esquerda {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .principal aside nav ul li a .ultimo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#ativo {
+    border-left: 5px solid #7E3AF2;
+    color: black;
+}
+
+.container .principal aside button {
+    background-color: #7E3AF2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.container .principal main table {
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .principal main table thead tr th {
+    text-align: left;
+    background-color: #F0F0F0;
+    padding: 10px;
+    color: gray;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.container .principal main table tbody tr td .cliente-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.container .principal main table tbody tr {
+    background-color: white;
+}
+
+.container .principal main table tbody tr td .cliente-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container .principal main table tbody tr td .cliente-info .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .principal main table tbody tr td .cliente-info .info p {
+    line-height: 0;
+    font-size: 10px;
+    color: gray;
+}
+
+.container .principal main table tbody tr td .status {
+    width: fit-content;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+#pago {
+    background-color: #DEF8ED;
+    color: #469E7E;
+}
+
+#cancelado {
+    background-color: #F8DEDE;
+    color: #9E4546;
+}
+
+#pendente {
+    background-color: #F8F0DE;
+    color: #9E8B46;
+}
