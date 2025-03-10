@@ -140,7 +140,7 @@ p, b, h1 {
 .info b {
     font-weight: bold;
     font-size: 18px;
-    
+
 }
 
 
@@ -277,4 +277,17 @@ p, b, h1 {
 #pendente {
     background-color: #F8F0DE;
     color: #9E8B46;
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+
+    .container .principal aside {
+        display: none;
+    }
+
+    .container .principal main {
+        width: 100%;
+    }
 }
