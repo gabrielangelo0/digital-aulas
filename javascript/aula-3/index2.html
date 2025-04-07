@@ -19,7 +19,7 @@
       <!-- Direita -->
       <div class="w-1/2 h-full flex justify-center items-center">
         <!-- Card -->
-        <div class="bg-gray-700 w-3/4 rounded-md text-white p-4 flex flex-col">
+        <form class="bg-gray-700 w-3/4 rounded-md text-white p-4 flex flex-col" onsubmit="calcularIMC(event)">
             <div>
                 <h1 class="text-3xl">Calculadora - IMC</h1>
                 <span class="border-b-2 flex border-green-600 w-[150px] h-4"></span>
@@ -30,28 +30,30 @@
                 <div class="flex flex-col">
                     <label for="peso">Peso</label>
                     <input type="number" name="" id="peso" class="bg-gray-600 rounded-md p-2">
+                    <p id="error-peso" class="text-red-500 hidden">Preencha o campo peso.</p>
                 </div>
                 <!-- Campo -->
                 <div class="flex flex-col">
                     <label for="altura">Altura</label>
-                    <input type="number" name="" id="altura" class="bg-gray-600 rounded-md p-2">
+                    <input type="text" name="" id="altura" class="bg-gray-600 rounded-md p-2">
+                    <p id="error-altura" class="text-red-500 hidden">Preencha o campo altura.</p>
                 </div>
-                <button onclick="calcularIMC()" class="bg-green-600 w-full py-2 rounded-md">Calcular</button>
+                <button class="bg-green-600 w-full py-2 rounded-md">Calcular</button>
                 <span class="w-full border-b-2 border-gray-500 h-2 flex"></span>
             </div>
             <!-- Fim -->
             <div class="flex items-center space-x-6">
                 <!-- Esquerda -->
                 <div class="text-center">
-                    <h1 class="text-green-600 text-3xl" id="total-imc">30.23</h1>
+                    <h1 class="text-green-600 text-3xl" id="total-imc">00.00</h1>
                     <p class="text-sm">Seu IMC</p>
                 </div>
                 <!-- Direita -->
                 <div>
-                    <p id="grau">Você está com obesidade grau 1</p>
+                    <p id="grau"></p>
                 </div>
             </div>
-        </div>
+        </form>
       </div>
     </main>
 
